@@ -1,0 +1,21 @@
+[package]
+name = "steel-amm-api"
+description = "API for interacting with the SteelAmm program"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+repository.workspace = true
+readme.workspace = true
+keywords.workspace = true
+
+[dependencies]
+bytemuck.workspace = true
+mpl-token-metadata = "5.1.0"
+num_enum.workspace = true
+solana-program.workspace = true
+spl-associated-token-account = { version = "6.0.0", default-features = false, features = ["no-entrypoint"] }
+spl-token = { version = "8.0.0", default-features = false, features = ["no-entrypoint"] }
+steel.workspace = true
+thiserror.workspace = true

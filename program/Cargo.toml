@@ -1,0 +1,29 @@
+[package]
+name = "steel-amm-program"
+description = ""
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+repository.workspace = true
+readme.workspace = true
+keywords.workspace = true
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+steel-amm-api.workspace = true
+solana-program.workspace = true
+steel.workspace = true
+spl-token = { version = "8.0.0", default-features = false, features = ["no-entrypoint"] }
+mpl-token-metadata = "5.1.0"
+spl-associated-token-account = { version = "6.0.0", default-features = false, features = ["no-entrypoint"] }
+
+[dev-dependencies]
+base64 = "0.21"
+rand = "0.8.5"
+solana-program-test = "2.1"
+solana-sdk = "2.1"
+tokio = { version = "1.35", features = ["full"] }
