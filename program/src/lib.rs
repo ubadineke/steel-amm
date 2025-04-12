@@ -1,10 +1,10 @@
 mod add;
-mod initialize;
 mod create_pool;
+mod initialize;
 
 use add::*;
-use initialize::*;
 use create_pool::*;
+use initialize::*;
 
 use steel::*;
 use steel_amm_api::prelude::*;

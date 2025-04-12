@@ -30,13 +30,13 @@ pub struct Pool {
     /// True circulating supply without burns and lock ups
     pub lp_supply: u64,
 
-    pub lp_mint_decimals: u8,
-    /// mint0 and mint1 decimals
-    pub mint_a_decimals: u8,
-    pub mint_b_decimals: u8,
+    // pub lp_mint_decimals: u8,
+    // mint0 and mint1 decimals
+    // pub mint_a_decimals: u8,
+    // pub mint_b_decimals: u8,
 
     //padding for future updates
-    pub padding: [u8; 5], // observation account to store oracle data
+    // pub padding: [u8; 5], // observation account to store oracle data
                           // pub observation_key: Pubkey,
 
                           // The amounts of token_0 and token_1 that are owed to the liquidity provider.

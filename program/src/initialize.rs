@@ -4,7 +4,7 @@
 // pub fn process_initialize(accounts: &[AccountInfo<'_>], _data: &[u8]) -> ProgramResult {
 //     // Load accounts.
 //     let [signer_info, counter_info, system_program] = accounts else {
-//         return Err(ProgramError::NotEnoughAccountKeys);        
+//         return Err(ProgramError::NotEnoughAccountKeys);
 //     };
 //     signer_info.is_signer()?;
 //     counter_info.is_empty()?.is_writable()?.has_seeds(
@@ -29,7 +29,7 @@
 //         1 => true,
 //          0 => false,
 //          _ => ProgramError::InvalidAccountData
-      
+
 //       };
 
 //     Ok(())
